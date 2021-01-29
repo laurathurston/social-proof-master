@@ -9,14 +9,16 @@
 body {
   background-image: url("../images/bg-pattern-bottom-desktop.svg");
 }
+
 /* CONTENT */
 .wrapper {
     display: flex;
     margin-top: 150px;
+    margin-left: 125px;
+    margin-bottom: 50px;
 }
 .company-review {
-    flex: 1
-    margin-top: 15%;
+    flex: 1;
     height: 200px;
     width: 500px;
     float: :left
@@ -38,29 +40,93 @@ body {
   margin-top: 10px;
 }
 
+/* REVIEWS */
+
 .reviews {
 flex: 2;
-margin-left: 30%;
+
 }
 
+.review-content {
+  display: inline-flex;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5%;
+  margin: 10px;
+  padding: 14px;
+
+}
+.review-content-score {
+  margin-right: 5px;
+}
+
+.review-content-text {
+    font-size: .5rem;
+    color:hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-family: 'Spartan', sans-serif;
+    letter-spacing: 1.25px; 
+}
+
+.review-content:nth-child(1){
+  margin-left: 20%;
+}
+
+.review-content:nth-child(2){
+  margin-left: 30%;
+}
+
+.review-content:nth-child(3){
+  margin-left: 40%;
+}
+
+
+/* TESTIMONIALS */
 .testimonials {
     display: flex;
-    justify-content: space-between;
+    border-radius: 15%;
+    
 }
 
 .testimonial-1 {
     flex: 1;
+    justify-content: space-between;
     background-color: hsl(300, 43%, 22%);
+    width: 30%;
+    border-radius: 8%;
 }
 .testimonial-2 {
     flex: 2;
+    justify-content: space-between;
     background-color: hsl(300, 43%, 22%);
+    width: 30%;
+    border-radius: 8%;
 }
 .testimonial-3 {
     flex: 3;
+    justify-content: space-between;
     background-color: hsl(300, 43%, 22%);
+    width: 30%;
+    border-radius: 8%;
+}
+
+.user-info {
+  display: flex;
+
 }
 
 .user-pic {
-    
+  border-radius: 50%;
+  size: 5%  
+}
+
+.user-name {
+  flex: 1;
+
+}
+
+
+.buyer-type {
+  flex: 2;
+
+  flex-wrap: wrap;
 }
