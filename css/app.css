@@ -34,10 +34,10 @@ body {
   width: auto;
   color: hsl(303, 10%, 53%);
   letter-spacing: 1px;
-  line-height: 20px;
+  line-height: 25px;
   font-size: 1rem;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 /* REVIEWS */
@@ -82,51 +82,81 @@ flex: 2;
 
 /* TESTIMONIALS */
 .testimonials {
-    display: flex;
-    border-radius: 15%;
-    
-}
-
-.testimonial-1 {
-    flex: 1;
-    justify-content: space-between;
-    background-color: hsl(300, 43%, 22%);
-    width: 30%;
-    border-radius: 8%;
-}
-.testimonial-2 {
-    flex: 2;
-    justify-content: space-between;
-    background-color: hsl(300, 43%, 22%);
-    width: 30%;
-    border-radius: 8%;
-}
-.testimonial-3 {
-    flex: 3;
-    justify-content: space-between;
-    background-color: hsl(300, 43%, 22%);
-    width: 30%;
-    border-radius: 8%;
-}
-
-.user-info {
   display: flex;
+  margin-left: 125px;
+  margin-bottom: 50px;
+}
 
+.testimonial-content {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 5%;
+  height: 220px;
+  width: 30%;
+ }
+
+.testimonial-user-info {
+  display: flex;
+  margin-top: 15px;
+
+}
+
+.testimonial-user-info-text {
+display: flex;
+flex-direction: column;
+margin-top: 30px;
+margin-left: 30px;
 }
 
 .user-pic {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  size: 5%  
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
 .user-name {
-  flex: 1;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Spartan', sans-serif;
+  letter-spacing: 1.5px;
+  /* flex-direction: column; */
+}
 
+.buyer-type {
+  color: hsl(333, 80%, 67%);
+  font-weight: unset;
+  letter-spacing: 1.5px;
+  margin-top: 3px;
+}
+.user-review {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  color:hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: .5px;
+}
+
+.testimonial-content:nth-child(1) {
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+.testimonial-content:nth-child(2) {
+  margin-right: 40px;
+  margin-top: 80px;
+}
+
+.testimonial-content:nth-child(3) {
+margin-top: 100px;
 }
 
 
-.buyer-type {
-  flex: 2;
-
-  flex-wrap: wrap;
+@media (max-width: 375px) {
+  
 }
